@@ -27,6 +27,18 @@ default["redmine"]["http_server"]["ssl"]["dir"] = "#{default["redmine"]["deploy_
 default["redmine"]["http_server"]["ssl"]["cert_path"] = "#{default["redmine"]["http_server"]["ssl"]["dir"]}/redmine.cert"
 default["redmine"]["http_server"]["ssl"]["key_path"] = "#{default["redmine"]["http_server"]["ssl"]["dir"]}/redmine.key"
 
+# smtp
+default["redmine"]["smtp"]["enabled"] = false
+default["redmine"]["smtp"]["delivery_method"] = "smtp"
+default["redmine"]["smtp"]["tls"] = nil
+default["redmine"]["smtp"]["enable_starttls_auto"] = true
+default["redmine"]["smtp"]["address"] = "smtp.gmail.com"
+default["redmine"]["smtp"]["domain"] = nil
+default["redmine"]["smtp"]["port"] = "587"
+default["redmine"]["smtp"]["authentication"] = "login"
+default["redmine"]["smtp"]["user_name"] = "your_email@gmail.com"
+default["redmine"]["smtp"]["password"] = "your_password"
+
 # packages
 # packages are separated to better tracking
 case platform
