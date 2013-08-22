@@ -39,6 +39,10 @@ default["redmine"]["smtp"]["authentication"] = "login"
 default["redmine"]["smtp"]["user_name"] = "your_email@gmail.com"
 default["redmine"]["smtp"]["password"] = "your_password"
 
+# themes
+default["redmine"]["themes"]["enabled"] = false
+default["redmine"]["themes"]["default"] = nil
+
 # packages
 # packages are separated to better tracking
 case platform

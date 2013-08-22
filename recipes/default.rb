@@ -29,3 +29,5 @@ when "debian","ubuntu"
     include_recipe "redmine::package"
   end
 end
+
+include_recipe "redmine::themes"
